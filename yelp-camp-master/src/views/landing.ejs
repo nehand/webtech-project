@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Yelp Camp</title>
+</head>
+<style>
+    body{
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+        background-image: url('https://images.unsplash.com/photo-1507011586715-8afbf551622b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        font-family: 'Poppins', sans-serif;
+        position: relative;
+    }
+
+    body::after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(4, 37, 75, 0,6);
+    }
+
+    h1{
+        font-size: 5rem;
+        font-family: 'Poppins', sans-serif;
+        text-transform: capitalize;
+    }
+
+    .caption a{
+        font-family: 'Poppins', sans-serif;
+        text-decoration: none;
+        color: white;
+        border-radius: 0;
+        font-size: 1.5rem;
+        border: 1px solid #ffffff;
+        padding: 5px 20px;
+    }
+
+    .caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+    }
+
+    nav, .caption {
+        z-index: 2;
+    }
+
+    .container-fluid{
+        display: flex;
+    }
+
+    .navbar-header{
+        flex: 100;
+    }
+
+    .navbar-nav > li{
+        margin-left:30px;
+        margin-right:30px;
+    }
+
+    .nav-item{
+        color: #ffffff !important;
+        padding: 5px 25px !important;
+    }
+
+    .btn-1:hover{
+        color: #ffffff;
+        background: teal;
+    }
+</style>
+<body id="body">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transprent">
+        <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">CampZzz</a>
+            </div>
+            <div class="collapse navbar-collapse" >
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item"><a href="/login">Login</a></li>
+                    <li class="nav-item"><a href="/register">SignUp</a></li>
+                </ul>
+            </div>
+          </div>
+    </nav>
+
+    <div class="caption">
+        <h1>Welcome to YelpCamp</h1>
+        <h3>Get a place to Camp</h3>
+        <a href="/campgrounds" class="btn btn-md btn-outline-none btn-1">view all campgrounds</a> 
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Register</title>
+</head>
+<style>
+    .container{
+        width: 40%;
+        margin-top: 30px;
+    }
+</style>
+<body>
+    <div class="container">
+        <form action="/register" method="POST">
+            <div class="form-group">
+              <label for="userName">User Name</label>
+              <input  name="username" type="text" class="form-control" id="exampleInputEmail1">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+              <small id="emailHelp" class="form-text text-muted">We will never share your details with anyone!</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </div>
+    
+</body>
+</html>
